@@ -1,10 +1,30 @@
-- 👋 مرحبًا ، أناhebamohmedalkalifa
-- 👀 أنا مهتم بـ ...
-- 🌱 أتعلم حاليًا ...
--  ⁇ ️ أتطلع إلى التعاون في ...
-- 📫 كيف تصل إلي ...
+<?php 
+session_start();
+ ?>
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>in</title>
+	
+</head>
+<body>
+<?php 
+if($_POST["name"]=="admin" && $_POST["pass"]=="123"){
 
-<! ---
-hebamohmedalkalifa / hebamohmedalkalifa هو مستودع ✨ خاص ✨ لأنه يظهر `README.md` ( هذا الملف ) في ملف تعريف GitHub الخاص بك.
-يمكنك النقر فوق رابط المعاينة لإلقاء نظرة على التغييرات الخاصة بك.
---- >
+	$_SESSION['me']='YES';
+	echo "you have login successfully";
+	echo "<br>";
+	echo '<a href="http://localhost/phptota/hello.php">'."Go to edit page";
+}
+else{
+session_start();
+$_SESSION['me']='NO';
+echo "error";
+ 
+}
+
+?>
+</body>
+</html>
