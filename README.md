@@ -1,30 +1,30 @@
 <?php 
-session_start();
+session_start ( );
  ?>
- <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>in</title>
-	
-</head>
-<body>
-<?php 
-if($_POST["name"]=="admin" && $_POST["pass"]=="123"){
+ <!DOCTYPE html >
+< html >
+< الرأس >
+< مجموعة ميتا = "utf-8" >
+< اسم التعريف = محتوى "viewport" = "عرض = عرض الجهاز ، المقياس الأولي = 1" >
+< العنوان > في < / العنوان >
 
-	$_SESSION['me']='YES';
-	echo "you have login successfully";
-	echo "<br>";
-	echo '<a href="http://localhost/phptota/hello.php">'."Go to edit page";
+< / head >
+< الجسم >
+<?php 
+if ( $ _POST [ "name" ] = "admin" & = _POST $ "pass" [ ] "123" =
+
+$ _SESSION [ 'me' ] = 'YES';
+صدى "لقد قمت بتسجيل الدخول بنجاح";
+صدى "< br >";
+echo '< a href = "http://localhost/phptota/hello.php">'."Go لتحرير الصفحة";
 }
-else{
-session_start();
-$_SESSION['me']='NO';
-echo "error";
+آخر {
+session_start ( );
+$ _SESSION [ 'me' ] = 'NO';
+صدى "خطأ";
  
 }
 
 ?>
-</body>
-</html>
+< / الجسم >
+< / html >
